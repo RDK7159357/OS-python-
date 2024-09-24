@@ -49,9 +49,9 @@ class OperatingSystem:
 # Driver Code
 os = OperatingSystem(1000)
 
-os.allocate_blocks("database.db", 300)
-os.allocate_blocks("video.mp4", 600)
-os.allocate_blocks("image.jpg", 150)
+os.allocate_blocks("database.db", 300 * 1024)  # Size in KB
+os.allocate_blocks("video.mp4", 600 * 1024)    # Size in KB
+os.allocate_blocks("image.jpg", 150 * 1024)    # Size in KB
 
 os.display_allocation_status()
 

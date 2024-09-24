@@ -32,7 +32,7 @@ class DigitalArchive:
             print(f"{file_name} not found")
 
     def display_allocation_status(self):
-        print("Current Allocation Status:")
+        print("\nCurrent Allocation Status:")
         for i, file in enumerate(self.disk_blocks):
             status = file if file else "Free"
             print(f"Block {i}: {status}")
@@ -40,9 +40,9 @@ class DigitalArchive:
 # Driver Code
 digital_archive = DigitalArchive(100)
 
-digital_archive.allocate_blocks("Portrait1.jpg", 15)
-digital_archive.allocate_blocks("Landscape1.jpg", 10)
-digital_archive.allocate_blocks("Architecture1.jpg", 7)
+digital_archive.allocate_blocks("Portrait1.jpg", 15 * 1024)  # Size in KB
+digital_archive.allocate_blocks("Landscape1.jpg", 10 * 1024)  # Size in KB
+digital_archive.allocate_blocks("Architecture1.jpg", 7 * 1024)  # Size in KB
 
 digital_archive.display_allocation_status()
 

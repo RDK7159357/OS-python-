@@ -1,1 +1,0 @@
-Name: Jane Doe, Age: 32, Medical ID: 1002, Address: 456 Clinic Avenue

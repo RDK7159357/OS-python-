@@ -39,8 +39,9 @@ class FileAllocationTable:
     def delete_file(self, media_file, disk_blocks):
         current_block = media_file.start_block
         while current_block:
+            next_block = current_block.next_block
             disk_blocks.append(current_block)
-            current_block = current_block.next_block
+            current_block = next_block
 
         del self.fat[media_file.file_name]
 
@@ -48,8 +49,8 @@ def simulate_file_allocation():
     disk_blocks = [DiskBlock(i) for i in range(10)]
     fat = FileAllocationTable()
 
-    media_file1 = MediaFile("file1.txt", 5)
-    media_file2 = MediaFile("file2.mp3", 10)
+    media_file1 = MediaFile("file1.txt", 2048)  # Size in bytes
+    media_file2 = MediaFile("file2.mp3", 3072)  # Size in bytes
 
     fat.allocate_blocks(media_file1, disk_blocks)
     fat.allocate_blocks(media_file2, disk_blocks)
