@@ -24,7 +24,7 @@ class Document:
 
 def user_edit(document, user_id):
     # Simulate a user editing a random line in the document
-    for _ in range(3):  # Each user makes 3 edits
+    for _ in range(1):  # Each user makes 3 edits
         line_number = random.randint(0, len(document.lines) - 1)
         new_text = f"Edited by {user_id} at {time.time()}"
         document.edit_line(line_number, new_text)
@@ -34,7 +34,7 @@ def user_edit(document, user_id):
 # Driver Code
 document = Document()
 threads = []
-user_ids = [f'User{i+1}' for i in range(10)]
+user_ids = [f'User{i+1}' for i in range(2)]
 
 for user_id in user_ids:
     t = threading.Thread(target=user_edit, args=(document, user_id))
