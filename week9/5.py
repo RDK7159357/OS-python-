@@ -33,7 +33,7 @@ account = BankAccount(balance=1000)
 threads = []
 transaction_types = ['deposit', 'withdraw']
 
-for _ in range(5):  # Create 20 random transactions
+for _ in range(3):  # Create 20 random transactions
     transaction_type = random.choice(transaction_types)
     amount = random.randint(50, 200)
     t = threading.Thread(target=perform_transaction, args=(account, transaction_type, amount))
