@@ -44,16 +44,13 @@ class LibraryDisplay:
 
 
 # Driver Code
-library_display = LibraryDisplay(capacity=5)
+library_display = LibraryDisplay(capacity=3)
 book_checkouts = [
     ("The Great Gatsby", 3),
     ("1984", 5),
     ("To Kill a Mockingbird", 2),
     ("Pride and Prejudice", 4),
-    ("The Catcher in the Rye", 1),
-    ("Moby Dick", 6),
-    ("The Odyssey", 3),
-    ("War and Peace", 2)
+  
 ]
 
 for book, times_checked_out in book_checkouts:

@@ -38,18 +38,13 @@ class ArtGalleryDisplay:
 
 
 # Driver Code
-art_gallery_display = ArtGalleryDisplay(capacity=6)
+art_gallery_display = ArtGalleryDisplay(capacity=3)
 artworks = [
     "Sunset Over the Lake",
     "Abstract Dreams",
     "Cityscape at Dusk",
     "Portrait of the Artist",
-    "Golden Fields",
-    "Mystic Mountains",
-    "Abstract Dreams",
-    "Twilight Reflections",
-    "Sunset Over the Lake",
-    "Harmony in Blue"
+
 ]
 
 for artwork in artworks:

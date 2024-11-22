@@ -31,14 +31,12 @@ class LibraryShelf:
 
 
 # Driver Code
-library_shelf = LibraryShelf(capacity=5)
+library_shelf = LibraryShelf(capacity=2)
 books = [
     "The Great Adventure",
     "Mystery of the Lost City",
     "Journey Through Time",
-    "Secrets of the Ocean",
-    "The Final Frontier",
-    "Legends of the Hidden Realm"
+   
 ]
 
 for book in books:

@@ -38,15 +38,12 @@ class CafeRecipeBook:
 
 
 # Driver Code
-cafe_recipe_book = CafeRecipeBook(capacity=4)
+cafe_recipe_book = CafeRecipeBook(capacity=2)
 recipes = [
     "Pumpkin Spice Latte",
     "Apple Pie",
     "Blueberry Muffin",
-    "Cinnamon Roll",
-    "Apple Pie",
-    "Maple Pancakes",
-    "Pumpkin Spice Latte"
+
 ]
 
 for recipe in recipes:
