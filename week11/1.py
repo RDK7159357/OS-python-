@@ -5,9 +5,6 @@ from queue import Queue
 # Semaphore to represent the oven (1 at a time)
 oven_semaphore = threading.Semaphore(1)
 
-# Queue to represent baking requests
-request_queue = Queue()
-
 def baker(name, bake_time):
     """
     Represents a baker trying to use the oven.

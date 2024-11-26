@@ -10,10 +10,9 @@ def gardener(name, water_time):
     :param name: Name of the gardener
     :param water_time: Time required to use the water pump (in seconds)
     """
-    # Request to use the water pump
     print(f"Gardener {name} has requested the water pump for {water_time} seconds.")
     
-    # Wait for the semaphore to become available
+    # Wait for the water pump to become available
     with water_pump_semaphore:
         print(f"Gardener {name} is now using the water pump for {water_time} seconds.")
         
